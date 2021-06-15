@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Результат
+{% endblock %}
+
+{% block content %}
+    <fieldset class="form-group">
+      <legend class="mt-4">Ваш результат</legend>
+
+      <h1> {{ data }}</h1>
+
+
+    <a href="{% url 'start_page' %}" class="btn btn-warning">Пройти заново </a>
+
+    </fieldset>
+
+
+
+
+{% endblock %}

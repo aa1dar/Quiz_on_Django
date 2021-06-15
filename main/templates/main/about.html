@@ -1,0 +1,55 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Эабут
+{% endblock %}
+
+{% block content %}
+    <fieldset class="form-group">
+      <legend class="mt-4">{{ quest.question }}</legend>
+      <br>
+      <br>
+      <div class="form-check">
+        <h5>A.  {{ quest.answer1 }}</h5>
+
+      </div>
+      <div class="form-check">
+
+        <h5>B.  {{ quest.answer2 }}</h5>
+
+      </div>
+
+      </div>
+      <div class="form-check">
+
+        <h5>C.  {{ quest.answer3 }}</h5>
+
+      </div>
+
+      </div>
+      <div class="form-check">
+
+        <h5>D.  {{ quest.answer4 }}</h5>
+
+      </div>
+      <br>
+        <form  method="post">
+        {% csrf_token %}
+
+        <div class="form-check">
+
+
+            {{ form }}
+
+        </div>
+
+
+        <input class="btn btn-warning" type="submit" value="Внести ответ">
+      </form>
+
+    </fieldset>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Главная
+{% endblock %}
+
+{% block content %}
+    <fieldset class="form-group">
+      <legend class="mt-4">ОПРОС</legend>
+      <a href="{% url 'questions_detail' data%}" class="btn btn-warning">Поехали! </a>
+
+    </fieldset>
+
+
+
+
+{% endblock %}

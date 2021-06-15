@@ -1,0 +1,34 @@
+body{
+    padding: 60px;
+    align-content: center;
+
+
+}
+
+ul{
+    list-style-type:none;
+}
+li{
+    list-style-type:none;
+
+}
+
+.form-check{
+    align-content: center;
+    width: 35%;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-group{
+    align-content: center;
+    width: 35%;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 20px;
+
+
+}
+
